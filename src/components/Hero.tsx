@@ -13,10 +13,10 @@ export default function Hero() {
         <img
           src="/images/1613490493576-7fde63acd811.jpg"
           alt="Residência de alto padrão à beira-mar"
-          className="img-cover"
+          className="img-cover kenburns"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-winedeep/95 via-wine/80 to-wine/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-winedeep/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-winedeep/95 via-wine/75 to-wine/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-winedeep/90 via-transparent to-winedeep/30" />
       </div>
 
       <div className="container-x relative w-full py-16">
@@ -35,11 +35,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className="mt-6 font-display text-4xl leading-[1.05] text-cream sm:text-5xl lg:text-6xl"
+            className="mt-6 font-display text-5xl leading-[1.02] text-cream sm:text-6xl lg:text-7xl"
           >
-            Imóveis de alto padrão
-            <br />
-            à beira-mar do Ceará.
+            Imóveis de alto padrão{" "}
+            <span className="italic-serif text-gold">à beira-mar</span> do Ceará.
           </motion.h1>
 
           <motion.p

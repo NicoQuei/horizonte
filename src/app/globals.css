@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-display: "Hanken Grotesk", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-sans: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
 }
 
@@ -32,9 +32,14 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-display), sans-serif;
-  letter-spacing: -0.02em;
-  font-weight: 700;
+  font-family: var(--font-display), serif;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.italic-serif {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 /* container padrão */
@@ -148,4 +153,44 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* ken burns sutil em imagens de capa */
+@keyframes kenburns {
+  from {
+    transform: scale(1.03);
+  }
+  to {
+    transform: scale(1.13);
+  }
+}
+.kenburns {
+  animation: kenburns 18s ease-out alternate infinite;
+}
+
+/* régua dourada */
+.gold-rule {
+  height: 1px;
+  width: 3.5rem;
+  background: linear-gradient(90deg, #b5872f, transparent);
+}
+
+/* marquee elegante */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 32s linear infinite;
+}
+
+/* hover lift em cards */
+.card:hover {
+  transform: translateY(-4px);
 }
